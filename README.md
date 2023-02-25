@@ -1,2 +1,2 @@
 # crudUsers
-Crud de usuários com PHP 8.
+CRUD de usuários com PHP 8.
