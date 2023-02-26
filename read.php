@@ -29,7 +29,7 @@
         echo "</tr>";
         }}
         else{
-            echo "<p> class = 'alert alert-danger'> Did not find results! </p>";
+            echo "<p class = 'alert alert-danger'> Did not find results! </p>";
 
         }
 ?>
