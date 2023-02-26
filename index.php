@@ -36,13 +36,16 @@
                         include('config.php'); 
                         switch(@$_REQUEST["page"]){
                         case "create":
-                        include("create.php");
-                        break;
+                            include("create.php");
+                            break;
                         case "read":
-                        include("read.php");
-                        break;
+                            include("read.php");
+                            break;
+                        case "save":
+                            include("saveUsers.php");
+                            break;
                         default:
-                        echo "<h1>Bem vindos!</h1>";
+                            echo "<h1>Bem vindos!</h1>";
                         }
                     ?>
                 </div>
