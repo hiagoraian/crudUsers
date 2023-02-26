@@ -32,15 +32,16 @@
         <div class="container">
             <div class="row">
                 <div class="col mt-5">
-                    <?php 
-                switch(@$_REQUEST["page"]){
-                    case "create":
+                    <?php
+                        include('config.php'); 
+                        switch(@$_REQUEST["page"]){
+                        case "create":
                         include("create.php");
                         break;
-                    case "read":
+                        case "read":
                         include("read.php");
                         break;
-                    default:
+                        default:
                         echo "<h1>Bem vindos!</h1>";
                         }
                     ?>
