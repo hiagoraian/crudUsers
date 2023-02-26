@@ -22,8 +22,9 @@
             echo "<td>".$row->email."</td>";
             echo "<td>".$row->date."</td>";
             echo"<td>
-                <button class='btn btn-success'>Edit</button>
-                <button class='btn btn-danger'>Delete</button>
+                <button onclick = \"location.href='?page=edit&id=".$row->id."'\" class='btn btn-success'>Edit</button>
+
+                <button onclick = \"if(confirm('Delete user?')){location.href='?page=save&action=delete&id=".$row->id."'}else{false;}\"   class='btn btn-danger'>Delete</button>
                 </td>";
         echo "</tr>";
         }}

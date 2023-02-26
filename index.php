@@ -44,6 +44,9 @@
                         case "save":
                             include("saveUsers.php");
                             break;
+                        case "edit":
+                            include("editUsers.php");
+                            break;
                         default:
                             echo "<h1>Bem vindos!</h1>";
                         }
